@@ -13,7 +13,7 @@ resource "azurerm_network_security_rule" "ib_sr" {
   protocol                    = "Tcp"
   source_port_range           = "*"
   destination_port_range      = "3389"
-  source_address_prefix       = "24.251.134.176"
+  source_address_prefix       = 
   destination_address_prefix  = "*"
   resource_group_name         = var.rg
   network_security_group_name = var.sg
